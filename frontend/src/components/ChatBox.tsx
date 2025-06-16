@@ -1,13 +1,7 @@
 import { useState } from "react";
 import InputContainer from "./InputContainer";
 import MessageContainer from "./MessageContainer";
-
-interface Message {
-  text: string;
-  isUser: boolean;
-}
-
-
+import type { Message } from "../helpers/types";
 
 export default function ChatBox() {
   const [messages, setMessages] = useState<Message[]>([]);
