@@ -19,7 +19,7 @@ export default function ChatBox() {
         {/* Message Container */}
         <MessageContainer messages={messages} />
         {/* Input Container */}
-         <InputContainer messages={messages} setMessages={setMessages} />
+        <InputContainer messages={messages} setMessages={setMessages} />
       </div>
     </div>
   );
