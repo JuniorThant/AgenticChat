@@ -74,6 +74,7 @@ export default function InputContainer({
     <div className="border-t px-4 py-3 flex items-center gap-2">
       {/* Text input */}
       <input
+      data-testid="text"
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
@@ -103,6 +104,7 @@ export default function InputContainer({
       {/* Show Image Preview */}
       {file && (
         <button
+          data-testid="arrow" 
           onClick={() => setShowModal((prev) => !prev)}
           className="hover:text-blue-500"
         >
@@ -112,6 +114,7 @@ export default function InputContainer({
 
       {/* Photo Upload */}
       <label
+        data-testid="file-upload"
         htmlFor="file-upload"
         className="cursor-pointer bg-gray-200 px-3 py-2 rounded-md"
       >
@@ -120,6 +123,7 @@ export default function InputContainer({
 
       {/* Thinking Icon */}
       <button
+        data-testid="thinking-tool"
         onClick={() => setIsThinking((prev) => !prev)}
         className={`cursor-pointer bg-gray-200 px-3 py-2 rounded-md ${isThinking ? "text-blue-500" : ""}`}
       >
@@ -128,6 +132,7 @@ export default function InputContainer({
 
       {/* Send Button */}
       <button
+        data-testid="send"
         className="bg-blue-500 text-white p-4 rounded-md"
         onClick={handleSend}
       >
@@ -143,7 +148,7 @@ export default function InputContainer({
 
       {/* Image Preview Modal */}
       {showModal && file && (
-        <div className="absolute bottom-20 right-4 bg-white border shadow-md rounded-md p-2 z-10">
+        <div data-testid="image-modal" className="absolute bottom-20 right-4 bg-white border shadow-md rounded-md p-2 z-10">
           <span className="font-medium text-sm m-7">Image Preview</span>
           <img
             src={URL.createObjectURL(file)}
