@@ -1,0 +1,31 @@
+[
+  {
+    "id": "78a5fef7-a65e-4d2f-ba72-712eedf4046f",
+    "title": "Hi",
+    "messages": [
+      {
+        "text": "Hi",
+        "isUser": true
+      },
+      {
+        "text": "Hello! How can I assist you today?\n",
+        "isUser": false
+      },
+      {
+        "text": "What are you doing?",
+        "isUser": true
+      },
+      {
+        "text": "I'm currently engaged in a conversation with you, responding to your queries and providing information to the best of my abilities.  I'm processing your requests, accessing and synthesizing information from my vast dataset to formulate helpful and relevant answers.  Essentially, I'm fulfilling my purpose as a chatbot: assisting users like you.\n",
+        "isUser": false
+      }
+    ],
+    "timestamp": "2025-07-17T16:23:17.029612"
+  },
+  {
+    "id": "33e6d975-0ba4-482e-8f47-c0d81ba0f70d",
+    "title": "Untitled Chat",
+    "messages": [],
+    "timestamp": "2025-07-17T16:23:31.362435"
+  }
+]
